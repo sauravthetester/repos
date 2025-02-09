@@ -1,0 +1,92 @@
+<TestRun xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" id="fbb3adfd-f59d-469c-bab7-ca668a325be3" name="Bidyashrees-MacBook-Pro.local\bidyashreepaul 2025-02-09T10:48:37.564Z" runUser="Bidyashrees-MacBook-Pro.local\bidyashreepaul">
+<ResultSummary outcome="Failed">
+<Counters total="3" executed="3" passed="2" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0"/>
+</ResultSummary>
+<Results>
+<UnitTestResult testName="setup &gt; mysetup.setup.ts &gt; do something" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testId="05a1112b-a984-544b-8957-e153fa665a43" executionId="4ac37285-680a-4adc-b131-68c4670e3ac5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" outcome="Passed" computerName="Bidyashrees-MacBook-Pro.local" startTime="2025-02-09T10:48:37.840Z" endTime="2025-02-09T10:48:38.107Z" duration="00:00:00.267">
+<Output>
+<StdOut>
+<![CDATA[ =========== setup
+]]>
+</StdOut>
+</Output>
+</UnitTestResult>
+<UnitTestResult testName="chromium &gt; example.spec.ts &gt; has title" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testId="1934666f-724b-51d9-9c9d-98580a8cc9b5" executionId="23f96bb1-d20e-4cec-9ef7-3d93ed29170b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" outcome="Passed" computerName="Bidyashrees-MacBook-Pro.local" startTime="2025-02-09T10:48:38.952Z" endTime="2025-02-09T10:48:41.960Z" duration="00:00:03.008">
+<Output>
+<StdOut>
+<![CDATA[ =========== beforeEach
+, =========== jonty
+, =========== undefined
+]]>
+</StdOut>
+</Output>
+<ResultFiles>
+<ResultFile path="/Users/bidyashreepaul/Documents/repos/test-results/example-has-title-chromium/attachments/downloaded-0a37e1b5cc20ed96254e3b8f1fbd68856df1ef59.png"/>
+</ResultFiles>
+</UnitTestResult>
+<UnitTestResult testName="chromium &gt; example.spec.ts &gt; get started link" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testId="e9229773-d5db-58dc-99a4-d9c0c8b00472" executionId="9441ed82-40ce-4c47-a727-f43b6ca842b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" outcome="Failed" computerName="Bidyashrees-MacBook-Pro.local" startTime="2025-02-09T10:48:38.951Z" endTime="2025-02-09T10:48:47.120Z" duration="00:00:08.169">
+<Output>
+<StdOut>
+<![CDATA[ =========== beforeEach
+, =========== SAR = playwrightEnv1
+, =========== config = true
+, =========== jonty
+, =========== undefined
+]]>
+</StdOut>
+<ErrorInfo>
+<Message>
+<![CDATA[Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+Locator: getByRole('button', { name: 'Installation' })
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 5000ms
+  - waiting for getByRole('button', { name: 'Installation' })
+]]>
+</Message>
+<StackTrace>
+<![CDATA[
+  23 |   await page.getByRole('link', { name: 'Get started' }).click();
+  24 |   // Expects page to have a heading with the name of Installation.
+> 25 |   await expect(page.getByRole('button', { name: 'Installation' })).toBeVisible();
+     |                                                                    ^
+  26 |
+  27 | });
+  28 |
+
+    at /Users/bidyashreepaul/Documents/repos/tests/example.spec.ts:25:68]]>
+</StackTrace>
+</ErrorInfo>
+</Output>
+<ResultFiles>
+<ResultFile path="/Users/bidyashreepaul/Documents/repos/test-results/example-get-started-link-chromium/attachments/downloaded-0a37e1b5cc20ed96254e3b8f1fbd68856df1ef59.png"/>
+</ResultFiles>
+</UnitTestResult>
+</Results>
+<TestDefinitions>
+<UnitTest id="05a1112b-a984-544b-8957-e153fa665a43" name="setup &gt; mysetup.setup.ts &gt; setup &gt; mysetup.setup.ts &gt; do something" storage="/Users/bidyashreepaul/Documents/repos/tests/mysetup.setup.ts">
+<Execution id="4ac37285-680a-4adc-b131-68c4670e3ac5"/>
+<TestMethod className="setup &gt; mysetup.setup.ts" codeBase="/Users/bidyashreepaul/Documents/repos/tests/mysetup.setup.ts" name="setup &gt; mysetup.setup.ts &gt; do something"/>
+</UnitTest>
+<UnitTest id="1934666f-724b-51d9-9c9d-98580a8cc9b5" name="chromium &gt; example.spec.ts &gt; chromium &gt; example.spec.ts &gt; has title" storage="/Users/bidyashreepaul/Documents/repos/tests/example.spec.ts">
+<Execution id="23f96bb1-d20e-4cec-9ef7-3d93ed29170b"/>
+<TestMethod className="chromium &gt; example.spec.ts" codeBase="/Users/bidyashreepaul/Documents/repos/tests/example.spec.ts" name="chromium &gt; example.spec.ts &gt; has title"/>
+</UnitTest>
+<UnitTest id="e9229773-d5db-58dc-99a4-d9c0c8b00472" name="chromium &gt; example.spec.ts &gt; chromium &gt; example.spec.ts &gt; get started link" storage="/Users/bidyashreepaul/Documents/repos/tests/example.spec.ts">
+<Execution id="9441ed82-40ce-4c47-a727-f43b6ca842b9"/>
+<TestMethod className="chromium &gt; example.spec.ts" codeBase="/Users/bidyashreepaul/Documents/repos/tests/example.spec.ts" name="chromium &gt; example.spec.ts &gt; get started link"/>
+</UnitTest>
+</TestDefinitions>
+<TestEntries>
+<TestEntry testId="05a1112b-a984-544b-8957-e153fa665a43" executionId="4ac37285-680a-4adc-b131-68c4670e3ac5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+<TestEntry testId="1934666f-724b-51d9-9c9d-98580a8cc9b5" executionId="23f96bb1-d20e-4cec-9ef7-3d93ed29170b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+<TestEntry testId="e9229773-d5db-58dc-99a4-d9c0c8b00472" executionId="9441ed82-40ce-4c47-a727-f43b6ca842b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+</TestEntries>
+<TestLists>
+<TestList id="8c84fa94-04c1-424b-9868-57a2d4851a1d" name="Results Not in a List"/>
+<TestList id="19431567-8539-422a-85d7-44ee4e166bda" name="All Loaded Results"/>
+</TestLists>
+<Times creation="2025-02-09T10:48:37.564Z" finish="2025-02-09T10:48:47.313Z"/>
+</TestRun>

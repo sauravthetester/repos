@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "afterEachText=jonty npx playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.49.1",
     "@types/node": "^22.10.7"
+  },
+  "dependencies": {
+    "playwright-trx-reporter": "^1.0.10"
   }
 }
