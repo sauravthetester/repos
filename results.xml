@@ -1,0 +1,40 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="8.922424999999999">
+<testsuite name="mysetup.setup.ts" timestamp="2025-02-09T18:11:12.628Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.772" errors="0">
+<testcase name="do something" classname="mysetup.setup.ts" time="0.772">
+<system-out>
+<![CDATA[ =========== setup
+
+[[ATTACHMENT|output/mysetup.setup.ts-do-something-setup/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2025-02-09T18:11:12.628Z" hostname="firefox" tests="2" failures="0" skipped="0" time="6.273" errors="0">
+<testcase name="has title" classname="example.spec.ts" time="3.533">
+<system-out>
+<![CDATA[ =========== beforeEach
+ =========== undefined
+ =========== undefined
+
+[[ATTACHMENT|output/example-has-title-firefox/attachments/downloaded-0a37e1b5cc20ed96254e3b8f1fbd68856df1ef59.png]]
+
+[[ATTACHMENT|output/example-has-title-firefox/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="get started link" classname="example.spec.ts" time="2.74">
+<system-out>
+<![CDATA[ =========== beforeEach
+ =========== SAR = playwrightEnv1
+ =========== config = true
+ =========== undefined
+ =========== undefined
+
+[[ATTACHMENT|output/example-get-started-link-firefox/attachments/downloaded-0a37e1b5cc20ed96254e3b8f1fbd68856df1ef59.png]]
+
+[[ATTACHMENT|output/example-get-started-link-firefox/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
