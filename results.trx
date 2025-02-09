@@ -1,9 +1,9 @@
-<TestRun xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" id="1817bd3e-e0aa-4fd3-a4d6-4a0fc4e2fac6" name="Bidyashrees-MacBook-Pro.local\bidyashreepaul 2025-02-09T11:48:39.826Z" runUser="Bidyashrees-MacBook-Pro.local\bidyashreepaul">
+<TestRun xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" id="79989e20-471f-4ccb-9d81-f166ca84c738" name="Bidyashrees-MacBook-Pro.local\bidyashreepaul 2025-02-09T11:55:52.373Z" runUser="Bidyashrees-MacBook-Pro.local\bidyashreepaul">
 <ResultSummary outcome="Completed">
-<Counters total="3" executed="3" passed="3" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0"/>
+<Counters total="1" executed="1" passed="1" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0"/>
 </ResultSummary>
 <Results>
-<UnitTestResult testName="setup &gt; mysetup.setup.ts &gt; do something" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testId="05a1112b-a984-544b-8957-e153fa665a43" executionId="6c581420-8d37-450a-8b05-cf87b84e9d74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" outcome="Passed" computerName="Bidyashrees-MacBook-Pro.local" startTime="2025-02-09T11:48:40.097Z" endTime="2025-02-09T11:48:40.373Z" duration="00:00:00.276">
+<UnitTestResult testName="setup &gt; mysetup.setup.ts &gt; do something" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testId="05a1112b-a984-544b-8957-e153fa665a43" executionId="b9345162-60e0-4b8c-85a3-2130e9c268f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" outcome="Passed" computerName="Bidyashrees-MacBook-Pro.local" startTime="2025-02-09T11:55:52.642Z" endTime="2025-02-09T11:55:55.443Z" duration="00:00:02.801">
 <Output>
 <StdOut>
 <![CDATA[ =========== setup
@@ -14,59 +14,19 @@
 <ResultFile path="/Users/bidyashreepaul/Documents/repos/output/mysetup.setup.ts-do-something-setup/trace.zip"/>
 </ResultFiles>
 </UnitTestResult>
-<UnitTestResult testName="firefox &gt; example.spec.ts &gt; has title" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testId="57bd31ec-dd9e-5cd8-9ad6-51bada0cfa1b" executionId="37320afd-eb14-4b4c-a6d5-75b0b2760e52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" outcome="Passed" computerName="Bidyashrees-MacBook-Pro.local" startTime="2025-02-09T11:48:41.106Z" endTime="2025-02-09T11:48:45.206Z" duration="00:00:04.100">
-<Output>
-<StdOut>
-<![CDATA[ =========== beforeEach
-, =========== undefined
-, =========== undefined
-]]>
-</StdOut>
-</Output>
-<ResultFiles>
-<ResultFile path="/Users/bidyashreepaul/Documents/repos/output/example-has-title-firefox/attachments/downloaded-0a37e1b5cc20ed96254e3b8f1fbd68856df1ef59.png"/>
-<ResultFile path="/Users/bidyashreepaul/Documents/repos/output/example-has-title-firefox/trace.zip"/>
-</ResultFiles>
-</UnitTestResult>
-<UnitTestResult testName="firefox &gt; example.spec.ts &gt; get started link" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" testId="8b3e93b2-042b-53fb-8a6f-0151af41f0f6" executionId="763defef-7cfe-468e-a8eb-9ad591b46bbf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" outcome="Passed" computerName="Bidyashrees-MacBook-Pro.local" startTime="2025-02-09T11:48:41.106Z" endTime="2025-02-09T11:48:45.015Z" duration="00:00:03.909">
-<Output>
-<StdOut>
-<![CDATA[ =========== beforeEach
-, =========== SAR = playwrightEnv1
-, =========== config = true
-, =========== undefined
-, =========== undefined
-]]>
-</StdOut>
-</Output>
-<ResultFiles>
-<ResultFile path="/Users/bidyashreepaul/Documents/repos/output/example-get-started-link-firefox/attachments/downloaded-0a37e1b5cc20ed96254e3b8f1fbd68856df1ef59.png"/>
-<ResultFile path="/Users/bidyashreepaul/Documents/repos/output/example-get-started-link-firefox/trace.zip"/>
-</ResultFiles>
-</UnitTestResult>
 </Results>
 <TestDefinitions>
 <UnitTest id="05a1112b-a984-544b-8957-e153fa665a43" name="setup &gt; mysetup.setup.ts &gt; setup &gt; mysetup.setup.ts &gt; do something" storage="/Users/bidyashreepaul/Documents/repos/tests/mysetup.setup.ts">
-<Execution id="6c581420-8d37-450a-8b05-cf87b84e9d74"/>
+<Execution id="b9345162-60e0-4b8c-85a3-2130e9c268f0"/>
 <TestMethod className="setup &gt; mysetup.setup.ts" codeBase="/Users/bidyashreepaul/Documents/repos/tests/mysetup.setup.ts" name="setup &gt; mysetup.setup.ts &gt; do something"/>
-</UnitTest>
-<UnitTest id="57bd31ec-dd9e-5cd8-9ad6-51bada0cfa1b" name="firefox &gt; example.spec.ts &gt; firefox &gt; example.spec.ts &gt; has title" storage="/Users/bidyashreepaul/Documents/repos/tests/example.spec.ts">
-<Execution id="37320afd-eb14-4b4c-a6d5-75b0b2760e52"/>
-<TestMethod className="firefox &gt; example.spec.ts" codeBase="/Users/bidyashreepaul/Documents/repos/tests/example.spec.ts" name="firefox &gt; example.spec.ts &gt; has title"/>
-</UnitTest>
-<UnitTest id="8b3e93b2-042b-53fb-8a6f-0151af41f0f6" name="firefox &gt; example.spec.ts &gt; firefox &gt; example.spec.ts &gt; get started link" storage="/Users/bidyashreepaul/Documents/repos/tests/example.spec.ts">
-<Execution id="763defef-7cfe-468e-a8eb-9ad591b46bbf"/>
-<TestMethod className="firefox &gt; example.spec.ts" codeBase="/Users/bidyashreepaul/Documents/repos/tests/example.spec.ts" name="firefox &gt; example.spec.ts &gt; get started link"/>
 </UnitTest>
 </TestDefinitions>
 <TestEntries>
-<TestEntry testId="05a1112b-a984-544b-8957-e153fa665a43" executionId="6c581420-8d37-450a-8b05-cf87b84e9d74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-<TestEntry testId="57bd31ec-dd9e-5cd8-9ad6-51bada0cfa1b" executionId="37320afd-eb14-4b4c-a6d5-75b0b2760e52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-<TestEntry testId="8b3e93b2-042b-53fb-8a6f-0151af41f0f6" executionId="763defef-7cfe-468e-a8eb-9ad591b46bbf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+<TestEntry testId="05a1112b-a984-544b-8957-e153fa665a43" executionId="b9345162-60e0-4b8c-85a3-2130e9c268f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
 </TestEntries>
 <TestLists>
 <TestList id="8c84fa94-04c1-424b-9868-57a2d4851a1d" name="Results Not in a List"/>
 <TestList id="19431567-8539-422a-85d7-44ee4e166bda" name="All Loaded Results"/>
 </TestLists>
-<Times creation="2025-02-09T11:48:39.826Z" finish="2025-02-09T11:48:47.545Z"/>
+<Times creation="2025-02-09T11:55:52.373Z" finish="2025-02-09T11:55:56.822Z"/>
 </TestRun>
