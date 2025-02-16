@@ -22,12 +22,6 @@ steps:
   displayName: 'Run Playwright tests'
   env:
     CI: 'true'
-
-- task: CopyFiles@2
-  displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
-  inputs:
-    Contents: '$(Build.Repository.LocalPath)/**' 
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: 'playwright-report'
