@@ -23,14 +23,15 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
-  testMatch: '**/*.spec.ts',
+  testMatch: '**/*ple2.spec.ts',
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [['html',{open: 'always'}]],
   // reporter: [['junit', { outputFile: 'results.xml' }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
+    screenshot: 'only-on-failure',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
@@ -38,16 +39,16 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'setup',
-      testDir: "./tests/",
-      testMatch: /.*\.setup\.ts/,
-      teardown: 'cleanup db',
-    },
-    {
-      name: 'cleanup db',
-      testMatch: /global\.teardown\.ts/,
-    },
+    // {
+    //   name: 'setup',
+    //   testDir: "./tests/",
+    //   testMatch: /.*\.setup\.ts/,
+    //   teardown: 'cleanup db',
+    // },
+    // {
+    //   name: 'cleanup db',
+    //   testMatch: /global\.teardown\.ts/,
+    // },
     // {
     //   name: 'chromium',
     //   dependencies: ['setup'],
@@ -56,7 +57,7 @@ export default defineConfig({
 
     {
       name: 'firefox',
-      dependencies: ['setup'],
+      // dependencies: ['setup'],
       use: { ...devices['Desktop Firefox'] },
     },
 

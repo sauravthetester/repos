@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="8.922424999999999">
-<testsuite name="mysetup.setup.ts" timestamp="2025-02-09T18:11:12.628Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.772" errors="0">
-<testcase name="do something" classname="mysetup.setup.ts" time="0.772">
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="15.495572">
+<testsuite name="mysetup.setup.ts" timestamp="2025-02-10T17:32:42.104Z" hostname="setup" tests="1" failures="0" skipped="0" time="0.793" errors="0">
+<testcase name="do something" classname="mysetup.setup.ts" time="0.793">
 <system-out>
 <![CDATA[ =========== setup
 
@@ -9,8 +9,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="example.spec.ts" timestamp="2025-02-09T18:11:12.628Z" hostname="firefox" tests="2" failures="0" skipped="0" time="6.273" errors="0">
-<testcase name="has title" classname="example.spec.ts" time="3.533">
+<testsuite name="example.spec.ts" timestamp="2025-02-10T17:32:42.104Z" hostname="firefox" tests="2" failures="1" skipped="0" time="15.563" errors="0">
+<testcase name="has title" classname="example.spec.ts" time="5.229">
 <system-out>
 <![CDATA[ =========== beforeEach
  =========== undefined
@@ -22,7 +22,42 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="get started link" classname="example.spec.ts" time="2.74">
+<testcase name="get started link" classname="example.spec.ts" time="10.334">
+<failure message="example.spec.ts:14:5 get started link" type="FAILURE">
+<![CDATA[  [firefox] › example.spec.ts:14:5 › get started link ──────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+
+    Locator: getByRole('button', { name: 'Installation' })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Installation' })
+
+
+      23 |   await page.getByRole('link', { name: 'Get started' }).click();
+      24 |   // Expects page to have a heading with the name of Installation.
+    > 25 |   await expect(page.getByRole('button', { name: 'Installation' })).toBeVisible();
+         |                                                                    ^
+      26 |
+      27 | });
+      28 |
+        at /Users/bidyashreepaul/Documents/repos/tests/example.spec.ts:25:68
+
+    attachment #1: downloaded (image/png) ──────────────────────────────────────────────────────────
+    output/example-get-started-link-firefox/attachments/downloaded-0a37e1b5cc20ed96254e3b8f1fbd68856df1ef59.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    output/example-get-started-link-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace output/example-get-started-link-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[ =========== beforeEach
  =========== SAR = playwrightEnv1
