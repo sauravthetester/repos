@@ -4,7 +4,9 @@ import { afterEach } from 'node:test';
 
 
 test('has title', async ({ page }) => {
+  test.step('step1', async () => {
   await page.goto('https://www.flipkart.com/');
+  });
   await page.getByPlaceholder('Search for Products, Brands and More').fill('mouse');
   await page.locator('//button[@title="Search for Products, Brands and More"]').click();
   await page.getByRole('link',{ name : 'Login' }).click();
