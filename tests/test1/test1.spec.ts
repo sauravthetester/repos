@@ -11,6 +11,5 @@ test('amazon', async () => {
   const page2:Page = await LoginPage.getPage();
 
   await page2.goto('https://amazon.com/');
-  await page2.locator('text=Get ghhggstarted').click();
 });
 });

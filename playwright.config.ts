@@ -19,7 +19,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : 1,
-  testMatch: '**/*e2.spec.ts',
+  testMatch: '**/*.spec.ts',
   reporter: [['playwright-trx-reporter', { outputFile: 'results.trx' }]],
   maxFailures: 10,
   expect: {

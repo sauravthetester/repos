@@ -23,7 +23,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
-  testMatch: '**/*ple2.spec.ts',
+  testMatch: '**/*.spec.ts',
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: [['html',{open: 'always'}]],
   reporter: [['junit', { outputFile: 'results.xml' }]],

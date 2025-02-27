@@ -1,53 +1,132 @@
-<testsuites id="" name="" tests="2" failures="1" skipped="0" errors="0" time="15.517762000000001">
-<testsuite name="example2.spec.ts" timestamp="2025-02-16T06:14:15.896Z" hostname="firefox" tests="2" failures="1" skipped="0" time="18.804" errors="0">
-<testcase name="has title" classname="example2.spec.ts" time="12.293">
-<failure message="example2.spec.ts:6:5 has title" type="FAILURE">
-<![CDATA[  [firefox] › example2.spec.ts:6:5 › has title ─────────────────────────────────────────────────────
+<testsuites id="" name="" tests="7" failures="1" skipped="1" errors="0" time="34.812642">
+<testsuite name="example.spec.ts" timestamp="2025-02-27T14:35:11.762Z" hostname="chrome" tests="3" failures="0" skipped="0" time="10.885" errors="0">
+<testcase name="report tests › has title" classname="example.spec.ts" time="6.103">
+<properties>
+<property name="category" value="report">
+</property>
+</properties>
+<system-out>
+<![CDATA[ =========== beforeEach
+ =========== jonty
+ =========== undefined
 
-    Error: Timed out 5000ms waiting for expect(locator).toBeVisible()
+[[ATTACHMENT|output/example-report-tests-has-title-chrome/attachments/downloaded-0a37e1b5cc20ed96254e3b8f1fbd68856df1ef59.png]]
 
-    Locator: getByText('Please enter valid Email ID/Mobile numberiii')
-    Expected: visible
-    Received: <element(s) not found>
+[[ATTACHMENT|output/example-report-tests-has-title-chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="report tests › get started link" classname="example.spec.ts" time="2.328">
+<properties>
+<property name="category" value="report">
+</property>
+<property name="getFix" value="report">
+</property>
+</properties>
+<system-out>
+<![CDATA[ =========== beforeEach
+ =========== SAR = undefined
+ =========== config = true
+ =========== jonty
+ =========== undefined
+
+[[ATTACHMENT|output/example-report-tests-get-started-link-chrome/attachments/downloaded-0a37e1b5cc20ed96254e3b8f1fbd68856df1ef59.png]]
+
+[[ATTACHMENT|output/example-report-tests-get-started-link-chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="report tests › new get started link" classname="example.spec.ts" time="2.454">
+<properties>
+<property name="category" value="report">
+</property>
+</properties>
+<system-out>
+<![CDATA[ =========== beforeEach
+ =========== SAR = undefined
+ =========== config = true
+ =========== jonty
+ =========== undefined
+
+[[ATTACHMENT|output/example-report-tests-new-get-started-link-chrome/attachments/downloaded-0a37e1b5cc20ed96254e3b8f1fbd68856df1ef59.png]]
+
+[[ATTACHMENT|output/example-report-tests-new-get-started-link-chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="example2.spec.ts" timestamp="2025-02-27T14:35:11.762Z" hostname="chrome" tests="2" failures="0" skipped="1" time="7.018" errors="0">
+<testcase name="has title" classname="example2.spec.ts" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="has title2" classname="example2.spec.ts" time="7.018">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|output/example2-has-title2-chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="test1/test1.spec.ts" timestamp="2025-02-27T14:35:11.762Z" hostname="chrome" tests="1" failures="0" skipped="0" time="8.433" errors="0">
+<testcase name="Amazon Test › amazon" classname="test1/test1.spec.ts" time="8.433">
+<properties>
+<property name="Amazon" value="report">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|output/test1-test1-Amazon-Test-amazon-chrome/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="test2/test2.spec.ts" timestamp="2025-02-27T14:35:11.762Z" hostname="chrome" tests="1" failures="1" skipped="0" time="30.552" errors="0">
+<testcase name="Flipkart Test › flipkart" classname="test2/test2.spec.ts" time="30.552">
+<properties>
+<property name="Flipkart" value="report">
+</property>
+</properties>
+<failure message="test2.spec.ts:8:5 flipkart" type="FAILURE">
+<![CDATA[  [chrome] › test2/test2.spec.ts:8:5 › Flipkart Test › flipkart ────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
     Call log:
-      - expect.toBeVisible with timeout 5000ms
-      - waiting for getByText('Please enter valid Email ID/Mobile numberiii')
+      - waiting for locator('.Pke_EE00')
 
 
-      13 |   await expect(page.locator('//form/div/input[@type="text"]/following-sibling::span/span')).toBeVisible();
-      14 |   await expect(page.locator('//form/div/input[@type="text"]/following-sibling::span/span')).toHaveText('Please enter valid Email ID/Mobile number');
-    > 15 |   await expect(page.getByText('Please enter valid Email ID/Mobile numberiii')).toBeVisible();
-         |                                                                                ^
-      16 |   // await expect(page.getByText('Please enter valid Email ID/Mobile number')).toBeVisible();
-      17 |
-      18 | });
-        at /Users/bidyashreepaul/Documents/repos/tests/example2.spec.ts:15:80
+       9 |
+      10 |   await page.goto('https://www.flipkart.com/');
+    > 11 |   await page.locator('.Pke_EE00').click();
+         |                                   ^
+      12 | });
+      13 | });
+        at /Users/bidyashreepaul/Documents/repos/tests/test2/test2.spec.ts:11:35
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    output/example2-has-title-firefox/test-failed-1.png
+    output/test2-test2-Flipkart-Test-flipkart-chrome/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    output/example2-has-title-firefox/trace.zip
+    output/test2-test2-Flipkart-Test-flipkart-chrome/trace.zip
     Usage:
 
-        npx playwright show-trace output/example2-has-title-firefox/trace.zip
+        npx playwright show-trace output/test2-test2-Flipkart-Test-flipkart-chrome/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|output/example2-has-title-firefox/test-failed-1.png]]
+[[ATTACHMENT|output/test2-test2-Flipkart-Test-flipkart-chrome/test-failed-1.png]]
 
-[[ATTACHMENT|output/example2-has-title-firefox/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="has title2" classname="example2.spec.ts" time="6.511">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|output/example2-has-title2-firefox/trace.zip]]
+[[ATTACHMENT|output/test2-test2-Flipkart-Test-flipkart-chrome/trace.zip]]
 ]]>
 </system-out>
 </testcase>

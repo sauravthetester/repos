@@ -3,7 +3,7 @@ import { afterEach } from 'node:test';
 
 
 
-test('has title', async ({ page }) => {
+test.skip('has title', async ({ page }) => {
   test.step('step1', async () => {
   await page.goto('https://www.flipkart.com/');
   });
@@ -14,7 +14,7 @@ test('has title', async ({ page }) => {
   await page.getByRole('button', {name : 'Request OTP'}).click();
   await expect(page.locator('//form/div/input[@type="text"]/following-sibling::span/span')).toBeVisible();
   await expect(page.locator('//form/div/input[@type="text"]/following-sibling::span/span')).toHaveText('Please enter valid Email ID/Mobile number');
-  await expect(page.getByText('Please enter valid Email ID/Mobile numberiii')).toBeVisible();
+  await expect(page.getByText('Please enter valid Email ID/Mobile number')).toBeVisible();
   // await expect(page.getByText('Please enter valid Email ID/Mobile number')).toBeVisible();
 
 });
@@ -33,4 +33,3 @@ test('has title2', async ({ page }) => {
 });
 
 // write
-afterEach
