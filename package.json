@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "afterEachText=jonty npx playwright test -c playwright2.config.ts"
+    "test": "afterEachText=daksu npx playwright test -c playwright2.config.ts"
   },
   "keywords": [],
   "author": "",
