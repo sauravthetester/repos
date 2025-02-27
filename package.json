@@ -14,6 +14,7 @@
     "@types/node": "^22.10.7"
   },
   "dependencies": {
+    "azure-pipelines-task-lib": "^5.0.0",
     "playwright-trx-reporter": "^1.0.10"
   }
 }

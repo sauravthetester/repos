@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { getTaskVariable } from "azure-pipelines-task-lib";
 
 test.describe('report tests', {
   annotation: { type: 'category', description: 'report' },
@@ -63,7 +64,7 @@ test.afterEach(async ({ page },testInfo) => {
   // afterEachText=hello npx playwright test
   // anotherText=trying afterEachText=hello npx playwright test
   console.log(` =========== ${process.env.afterEachText}`);
-  console.log(` =========== ${process.env.anotherText}`);
+  console.log(` =========== ${getTaskVariable("anotherText")}`);
 });
 
 });
