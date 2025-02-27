@@ -45,7 +45,6 @@ test('new get started link', async ({ page }, testInfo) => {
   test.fail(a==2);
 
   const {SAR} = process.env;
-  console.log(' =========== SAR = '+SAR);
   
   console.log(' =========== config = '+testInfo.config.fullyParallel);
   await page.goto('https://playwright.dev/');
@@ -64,7 +63,8 @@ test.afterEach(async ({ page },testInfo) => {
   // afterEachText=hello npx playwright test
   // anotherText=trying afterEachText=hello npx playwright test
   console.log(` =========== ${process.env.afterEachText}`);
-  console.log(` =========== ${getTaskVariable("anotherText")}`);
+  console.log(` PV =========== ${process.env.ANOTHERTEXT}`);
+  console.log(` PV =========== ${getTaskVariable("ANOTHERTEXT")}`);
 });
 
 });
